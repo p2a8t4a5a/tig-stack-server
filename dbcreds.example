@@ -1,2 +1,2 @@
-$IFDBAPW=adminpassword
-$IFDBTPW=influxdbpassword
+IFDBAPW="adminpassword"
+IFDBTPW="influxdbpassword"

@@ -1,7 +1,7 @@
 version: "2"
 
 networks:
-  tig_stack_network:
+  network:
 
 
 services:
@@ -9,10 +9,11 @@ services:
     image: grafana/grafana
     container_name: grafana
     restart: unless-stopped
+    user: "472"
     ports:
       - 3000:3000
     networks:
-      - tig_stack_network
+      - network
     volumes:
       - ./grafana-volume:/var/lib/grafana
 
@@ -23,6 +24,6 @@ services:
     ports:
       - 8086:8086
     networks:
-      - tig_stack_network
+      - network
     volumes:
       - ./influxdb-volume:/var/lib/influxdb
