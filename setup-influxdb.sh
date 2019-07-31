@@ -21,5 +21,6 @@ docker run --rm \
   -v $(pwd)/influxdb-volume:/var/lib/influxdb \
   influxdb /init-influxdb.sh
 
-  IFDBAPW="resetpw"
-  IFDBTPW="resetpw"
+#Remove secret password variables
+IFDBAPW="resetpw"
+IFDBTPW="resetpw"
