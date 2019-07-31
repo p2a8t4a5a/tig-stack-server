@@ -25,4 +25,4 @@ services:
     networks:
       - tig_stack_network
     volumes:
-      - influxdb-volume:/var/lib/influxdb
+      - ./influxdb-volume:/var/lib/influxdb
