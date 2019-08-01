@@ -19,7 +19,6 @@ vim dbcreds
 This script will start a docker Influx DB container, create a database named `telgraf`, with `admin` and `telegraf` users using the passwords you previously set.
 It will then run the InfluxDB setup.
 ```
-chmod +x setup-influxdb.sh
 ./setup-influxdb.sh
 ```
 
