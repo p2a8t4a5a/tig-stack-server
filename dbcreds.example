@@ -1,2 +1,3 @@
 IFDBAPW="adminpassword"
 IFDBTPW="influxdbpassword"
+RETENTIONDAYS="90"
