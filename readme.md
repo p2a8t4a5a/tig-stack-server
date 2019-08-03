@@ -30,5 +30,8 @@ This will start grafana listening on port 3000, and InfluxDB on port 8086.
 docker-compose up -d
 ```
 
-#### 5. Access and setup grafana
+#### 5. Install Telegraf client:
+https://gitlab.com/carverhaines/tig-stack-client
+
+#### 5. Access and setup grafana, add your database
 * Grafana available at: https://yourip:3000
