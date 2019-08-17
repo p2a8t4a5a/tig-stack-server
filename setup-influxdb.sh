@@ -10,6 +10,7 @@ echo -e "\033[1mCreating volumes...\033[0m"
 echo
 mkdir ./grafana-volume
 mkdir ./influxdb-volume
+mkdir ./ssl
 
 # Grafana folder must have UID/GID perms of '472' to be writeable
 echo
@@ -22,6 +23,13 @@ echo
 echo -e "\033[1mSourcing data in 'dbcreds'...\033[0m"
 echo
 source dbcreds
+
+# Generate the SSL certificates
+echo
+echo -e "\033[1mGenerating SSL Certs, please enter your info when asked...\033[0m"
+echo
+openssl req -new -newkey rsa:4096 -nodes -keyout ./ssl/influxdb.key -out ./ssl/influxdb.csr
+openssl x509 -req -sha256 -days 3650 -in ./ssl/influxdb.csr -signkey ./ssl/influxdb.key -out ./ssl/influxdb.pem
 
 # Run the docker once to setup the database and users in the local influxdb folder/volume
 echo
