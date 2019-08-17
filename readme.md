@@ -40,3 +40,4 @@ https://gitlab.com/carverhaines/tig-stack-client
 
 #### 5. Access and setup grafana, add your database
 * Grafana available at: https://yourip:3000
+* When adding datasource, Check "With CA Cert" and paste your certificate `cat cat ssl/influxdb.pem` and check "Skip TLS Verify"
