@@ -15,7 +15,7 @@ mkdir ./influxdb-volume
 echo
 echo -e "\033[1mChanging folder permissions for Grafana...\033[0m"
 echo
-sudo chown -R 472:472 grafana-volume
+chown -R 472:472 grafana-volume
 
 # Source the passwords
 echo

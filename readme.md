@@ -21,6 +21,9 @@ vim dbcreds
 This script will create grafana and influxdb data folders for volumes in the current directory, initializing InfluxDB in a docker container, create a database named `telgraf`, with `admin` and `telegraf` users using the passwords you previously set. It
 It will then run the InfluxDB setup. Then it will set the retention policy to the number of days specified in the dbcreds file.
 ```
+# Run as sudo if not root:
+sudo ./setup-influxdb.sh
+# OR run as root:
 ./setup-influxdb.sh
 ```
 
