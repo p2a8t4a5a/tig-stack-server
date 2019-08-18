@@ -35,20 +35,18 @@ This will start grafana listening on port 3000, and InfluxDB on port 8086.
 docker-compose up -d
 ```
 
-#### 5. Install Telegraf client:
-https://gitlab.com/carverhaines/tig-stack-client
-
 #### 5. Access and setup grafana, add your database
 * Grafana available at: yourip:3000, it will ask you to create a new admin username
 * Next add your InfluxDB datasource, set name as `telegraf`
 * Check "With CA Cert" and paste your certificate that generated in the setup script (`cat cat ssl/influxdb.pem`) and check "Skip TLS Verify"
 * DB is `telegraf` username is `telegraf`, password is the second one you set in `dbcreds`
-![Grafana Add Datasource](https://blog.linuxserver.io/content/images/2017/11/Screenshot-from-2017-11-25-17-56-24.png)
+![Grafana Add Datasource](https://gitlab.com/uploads/-/system/personal_snippet/1886760/03299766942173c25e1945ada377fd0f/Capture0.JPG)
 
 
 * Save and test!
 
-#### 6. Install telegraf client on all servers
+#### 6. Install telegraf client
+Install on all servers you wish to monitor (can start on same server)
 Instructions in repo:
 https://gitlab.com/carverhaines/tig-stack-client
 
@@ -60,8 +58,13 @@ https://gitlab.com/carverhaines/tig-stack-client
     * Has generic alerts setup for 1 & 5min loads (normalized for # of CPUs to a max load of 1), RAM usage, and Disk usage
     * Go into the alerts and set your preferred form of notification (e.g. email, slack, etc)
     * Also has detailed server overviews as dropdowns lower down on the screen
+    ![Servers Overview](https://gitlab.com/uploads/-/system/personal_snippet/1886760/413bb8dd9428650bdfca0891edc61997/Capture1.JPG)
+
   * **Server Dashboard**
     * A server-by-server host view with much more detail, change server by selecting from dropdown in top left.
+    ![Server Dashboard](https://gitlab.com/uploads/-/system/personal_snippet/1886760/2721114b14bd2c42549df16d883c8f0f/Capture2.JPG)
+
   * **Docker Dashboard**
     * Shows all docker containers, docker hosts, images, etc.
     * Drop downs below show details for each container.
+    ![Docker Dashboard](https://gitlab.com/uploads/-/system/personal_snippet/1886760/678155ee257e67b29b1eba4b0d942894/Capture3.JPG)
