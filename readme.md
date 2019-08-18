@@ -72,4 +72,8 @@ https://gitlab.com/carverhaines/tig-stack-client
     * Drop downs below show details for each container.
     ![Docker Dashboard](https://gitlab.com/uploads/-/system/personal_snippet/1886760/678155ee257e67b29b1eba4b0d942894/Capture3.JPG)
 
-    
+
+#### 8. Setup Alerts
+* Instructions here: https://grafana.com/docs/alerting/notifications/
+* Can setup to alert with graphs:
+  ![Slack Alert](https://angristan.xyz/content/images/2018/04/grafana_telegram_webdav.png)
