@@ -65,10 +65,11 @@
   "gnetId": null,
   "graphTooltip": 0,
   "id": null,
-  "iteration": 1566157884527,
+  "iteration": 1566159823135,
   "links": [],
   "panels": [
     {
+      "collapsed": false,
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -76,6 +77,7 @@
         "y": 0
       },
       "id": 30,
+      "panels": [],
       "title": "Alerts",
       "type": "row"
     },
@@ -1805,7 +1807,7 @@
           ],
           "orderByTime": "ASC",
           "policy": "default",
-          "query": "SELECT last(\"load5\") FROM \"system\" WHERE (\"host\" =~ /^$server$/) AND $timeFilter GROUP BY time($interval) fill(null)",
+          "query": "SELECT last(\"load5\")/last(\"n_cpus\") FROM \"system\" WHERE (\"host\" =~ /^$server$/) AND $timeFilter GROUP BY time($interval) fill(null)",
           "rawQuery": true,
           "refId": "A",
           "resultFormat": "time_series",
@@ -2380,7 +2382,7 @@
     ]
   },
   "timezone": "",
-  "title": "asdfasdf",
-  "uid": "sy5gUsvWkdasf",
-  "version": 1
+  "title": "Servers Overview",
+  "uid": "sy5gUsvWk",
+  "version": 17
 }

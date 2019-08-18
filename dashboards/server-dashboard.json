@@ -59,7 +59,7 @@
   "gnetId": 5955,
   "graphTooltip": 1,
   "id": null,
-  "iteration": 1566158830457,
+  "iteration": 1566160607401,
   "links": [],
   "panels": [
     {
@@ -1074,7 +1074,7 @@
           ],
           "orderByTime": "ASC",
           "policy": "default",
-          "query": "SELECT last(\"load5\") FROM \"system\" WHERE (\"host\" =~ /^$server$/) AND $timeFilter GROUP BY time($interval) fill(null)",
+          "query": "SELECT last(\"load5\")/last(\"n_cpus\") FROM \"system\" WHERE (\"host\" =~ /^$server$/) AND $timeFilter GROUP BY time($interval) fill(null)",
           "rawQuery": true,
           "refId": "A",
           "resultFormat": "time_series",
@@ -4722,5 +4722,5 @@
   "timezone": "browser",
   "title": "Server Dashboard",
   "uid": "HbNPwTvWz",
-  "version": 2
+  "version": 3
 }
