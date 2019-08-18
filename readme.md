@@ -76,4 +76,4 @@ https://gitlab.com/carverhaines/tig-stack-client
 #### 8. Setup Alerts
 * Instructions here: https://grafana.com/docs/alerting/notifications/
 * Can setup to alert with graphs:
-  ![Slack Alert](https://angristan.xyz/content/images/2018/04/grafana_telegram_webdav.png)
+* ![Slack Alert](https://angristan.xyz/content/images/2018/04/grafana_telegram_webdav.png)
