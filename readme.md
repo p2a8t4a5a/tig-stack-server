@@ -53,6 +53,7 @@ https://gitlab.com/carverhaines/tig-stack-client
 
 #### 7. Setup dashboards
 * You can start creating dashboards, or use my tamplate dashboards, of which there are 3. They can be found in this repo: https://gitlab.com/carverhaines/tig-stack-server/tree/master/dashboards
+
   * **Servers Overview** (make this your homepage):
     * Gives overview of ALL host servers
     * Has generic alerts setup for 1 & 5min loads (normalized for # of CPUs to a max load of 1), RAM usage, and Disk usage
@@ -60,11 +61,15 @@ https://gitlab.com/carverhaines/tig-stack-client
     * Also has detailed server overviews as dropdowns lower down on the screen
     ![Servers Overview](https://gitlab.com/uploads/-/system/personal_snippet/1886760/413bb8dd9428650bdfca0891edc61997/Capture1.JPG)
 
+
   * **Server Dashboard**
     * A server-by-server host view with much more detail, change server by selecting from dropdown in top left.
     ![Server Dashboard](https://gitlab.com/uploads/-/system/personal_snippet/1886760/2721114b14bd2c42549df16d883c8f0f/Capture2.JPG)
+
 
   * **Docker Dashboard**
     * Shows all docker containers, docker hosts, images, etc.
     * Drop downs below show details for each container.
     ![Docker Dashboard](https://gitlab.com/uploads/-/system/personal_snippet/1886760/678155ee257e67b29b1eba4b0d942894/Capture3.JPG)
+
+    
