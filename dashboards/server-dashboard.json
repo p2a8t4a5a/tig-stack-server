@@ -1,4 +1,46 @@
 {
+  "__inputs": [
+    {
+      "name": "DS_TELEGRAF",
+      "label": "telegraf",
+      "description": "",
+      "type": "datasource",
+      "pluginId": "influxdb",
+      "pluginName": "InfluxDB"
+    }
+  ],
+  "__requires": [
+    {
+      "type": "grafana",
+      "id": "grafana",
+      "name": "Grafana",
+      "version": "6.3.3"
+    },
+    {
+      "type": "panel",
+      "id": "graph",
+      "name": "Graph",
+      "version": ""
+    },
+    {
+      "type": "datasource",
+      "id": "influxdb",
+      "name": "InfluxDB",
+      "version": "1.0.0"
+    },
+    {
+      "type": "panel",
+      "id": "singlestat",
+      "name": "Singlestat",
+      "version": ""
+    },
+    {
+      "type": "panel",
+      "id": "table",
+      "name": "Table",
+      "version": ""
+    }
+  ],
   "annotations": {
     "list": [
       {
@@ -16,8 +58,8 @@
   "editable": true,
   "gnetId": 5955,
   "graphTooltip": 1,
-  "id": 3,
-  "iteration": 1565146176833,
+  "id": null,
+  "iteration": 1566158830457,
   "links": [],
   "panels": [
     {
@@ -42,7 +84,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "telegraf",
+      "datasource": "${DS_TELEGRAF}",
       "format": "s",
       "gauge": {
         "maxValue": 100,
@@ -161,7 +203,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "telegraf",
+      "datasource": "${DS_TELEGRAF}",
       "decimals": null,
       "format": "none",
       "gauge": {
@@ -274,7 +316,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "telegraf",
+      "datasource": "${DS_TELEGRAF}",
       "decimals": null,
       "format": "percent",
       "gauge": {
@@ -506,7 +548,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "telegraf",
+      "datasource": "${DS_TELEGRAF}",
       "decimals": null,
       "format": "percent",
       "gauge": {
@@ -738,7 +780,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "telegraf",
+      "datasource": "${DS_TELEGRAF}",
       "format": "percent",
       "gauge": {
         "maxValue": 100,
@@ -850,7 +892,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "telegraf",
+      "datasource": "${DS_TELEGRAF}",
       "decimals": 2,
       "format": "percent",
       "gauge": {
@@ -963,7 +1005,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "telegraf",
+      "datasource": "${DS_TELEGRAF}",
       "format": "none",
       "gauge": {
         "maxValue": 100,
@@ -1075,7 +1117,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "telegraf",
+      "datasource": "${DS_TELEGRAF}",
       "decimals": 0,
       "format": "none",
       "gauge": {
@@ -1438,7 +1480,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "telegraf",
+      "datasource": "${DS_TELEGRAF}",
       "decimals": null,
       "format": "percent",
       "gauge": {
@@ -1558,7 +1600,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "telegraf",
+          "datasource": "${DS_TELEGRAF}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -1689,7 +1731,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "telegraf",
+          "datasource": "${DS_TELEGRAF}",
           "editable": true,
           "error": false,
           "fill": 0,
@@ -1816,7 +1858,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "telegraf",
+          "datasource": "${DS_TELEGRAF}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -1954,7 +1996,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "telegraf",
+          "datasource": "${DS_TELEGRAF}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -2226,7 +2268,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "telegraf",
+          "datasource": "${DS_TELEGRAF}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -2500,7 +2542,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "telegraf",
+          "datasource": "${DS_TELEGRAF}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -2642,7 +2684,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "telegraf",
+          "datasource": "${DS_TELEGRAF}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -2784,7 +2826,7 @@
           "bars": true,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "telegraf",
+          "datasource": "${DS_TELEGRAF}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -2931,7 +2973,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "telegraf",
+          "datasource": "${DS_TELEGRAF}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -3073,7 +3115,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "telegraf",
+          "datasource": "${DS_TELEGRAF}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -3204,7 +3246,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "telegraf",
+          "datasource": "${DS_TELEGRAF}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -3335,7 +3377,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "telegraf",
+          "datasource": "${DS_TELEGRAF}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -3526,7 +3568,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "telegraf",
+          "datasource": "${DS_TELEGRAF}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -3717,7 +3759,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "telegraf",
+          "datasource": "${DS_TELEGRAF}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -3922,7 +3964,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "telegraf",
+          "datasource": "${DS_TELEGRAF}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -4111,7 +4153,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "telegraf",
+          "datasource": "${DS_TELEGRAF}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -4301,7 +4343,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "telegraf",
+          "datasource": "${DS_TELEGRAF}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -4439,7 +4481,7 @@
     }
   ],
   "refresh": "10s",
-  "schemaVersion": 18,
+  "schemaVersion": 19,
   "style": "dark",
   "tags": [
     "influxdb",
@@ -4449,20 +4491,17 @@
     "list": [
       {
         "allValue": null,
-        "current": {
-          "text": "XPS13",
-          "value": "XPS13"
-        },
-        "datasource": "telegraf",
-        "definition": "SHOW TAG VALUES FROM system WITH KEY=host",
+        "current": {},
+        "datasource": "${DS_TELEGRAF}",
+        "definition": "SELECT \"host\" FROM (SELECT last(\"uptime\") AS \"mean_uptime\" FROM \"system\" WHERE $timeFilter GROUP BY \"host\")",
         "hide": 0,
         "includeAll": false,
         "label": "Server",
         "multi": false,
         "name": "server",
         "options": [],
-        "query": "SHOW TAG VALUES FROM system WITH KEY=host",
-        "refresh": 1,
+        "query": "SELECT \"host\" FROM (SELECT last(\"uptime\") AS \"mean_uptime\" FROM \"system\" WHERE $timeFilter GROUP BY \"host\")",
+        "refresh": 2,
         "regex": "",
         "skipUrlSync": false,
         "sort": 0,
@@ -4585,11 +4624,8 @@
       },
       {
         "allValue": null,
-        "current": {
-          "text": "All",
-          "value": "$__all"
-        },
-        "datasource": "telegraf",
+        "current": {},
+        "datasource": "${DS_TELEGRAF}",
         "definition": "",
         "hide": 0,
         "includeAll": true,
@@ -4610,11 +4646,8 @@
       },
       {
         "allValue": null,
-        "current": {
-          "text": "All",
-          "value": "$__all"
-        },
-        "datasource": "telegraf",
+        "current": {},
+        "datasource": "${DS_TELEGRAF}",
         "definition": "",
         "hide": 0,
         "includeAll": true,
@@ -4635,11 +4668,8 @@
       },
       {
         "allValue": null,
-        "current": {
-          "text": "All",
-          "value": "$__all"
-        },
-        "datasource": "telegraf",
+        "current": {},
+        "datasource": "${DS_TELEGRAF}",
         "definition": "",
         "hide": 0,
         "includeAll": true,
@@ -4692,5 +4722,5 @@
   "timezone": "browser",
   "title": "Server Dashboard",
   "uid": "HbNPwTvWz",
-  "version": 27
+  "version": 2
 }
