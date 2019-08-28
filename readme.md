@@ -77,3 +77,10 @@ https://gitlab.com/carverhaines/tig-stack-client
 * Instructions here: https://grafana.com/docs/alerting/notifications/
 * Can setup to alert with graphs:
 * ![Slack Alert](https://angristan.xyz/content/images/2018/04/grafana_telegram_webdav.png)
+* 
+
+----
+
+### Sources:
+https://blog.linuxserver.io/2017/11/25/how-to-monitor-your-server-using-grafana-influxdb-and-telegraf/
+https://angristan.xyz/monitoring-telegraf-influxdb-grafana/
