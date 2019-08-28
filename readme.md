@@ -83,4 +83,5 @@ https://gitlab.com/carverhaines/tig-stack-client
 
 ### Sources:
 https://blog.linuxserver.io/2017/11/25/how-to-monitor-your-server-using-grafana-influxdb-and-telegraf/
+
 https://angristan.xyz/monitoring-telegraf-influxdb-grafana/
